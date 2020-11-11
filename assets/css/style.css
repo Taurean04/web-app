@@ -1,0 +1,248 @@
+
+body {
+	background: #333;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+	font-weight:bold;
+    color: yellow;
+    line-height: 24px;
+}
+
+strong { font-weight: 700; }
+
+a, a:hover, a:focus {
+	color: #a93a52;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+h1, h2 {
+	margin-top: 10px;
+	font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 44px;
+}
+
+img { max-width: 100%; }
+
+::-moz-selection { background: #a93a52; color: #fff; text-shadow: none; }
+::selection { background: #a93a52; color: #fff; text-shadow: none; }
+
+
+/***** Top menu *****/
+
+.navbar {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background: #333;
+	background: rgba(51, 51, 51, 0.7);
+	border: 0;
+	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+ul.navbar-nav {
+	font-size: 14px;
+	color: #fff;
+}
+
+.navbar-inverse ul.navbar-nav li { padding-top: 8px; padding-bottom: 8px;}
+
+.navbar-inverse ul.navbar-nav li .li-text {
+    opacity: 0.8;
+    color: #f2f2f2;
+	font-size: 12px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 5px 15px;
+	margin-right: 15px;
+	background: #4ECDC4;
+	margin-top: 15px;
+}
+
+.navbar-inverse ul.navbar-nav li a { display: inline; padding: 0; color: #fff; }
+.navbar-inverse ul.navbar-nav li a:hover { color: #fff; opacity: 1; border-bottom: 1px dotted #fff; }
+.navbar-inverse ul.navbar-nav li a:focus { color: #fff; outline: 0; opacity: 1; border-bottom: 1px dotted #fff; }
+
+.navbar-inverse ul.navbar-nav li .li-social a {
+	margin: 0 7px;
+	font-size: 28px;
+	vertical-align: middle;
+}
+.navbar-inverse ul.navbar-nav li .li-social a:hover, 
+.navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #a93a52; }
+
+.navbar-brand {
+	width: 229px;
+	background: url(../img/logo.png) left center no-repeat;
+	text-indent: -99999px;
+}
+.navbar>.container .navbar-brand { margin-left: 0; }
+
+
+/***** Description *****/
+
+.description-container {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.description-title { padding-bottom: 10px; }
+.description-text { opacity: 0.8; }
+
+.description-text a { color: #fff; border: 0; }
+.description-text a:hover,
+.description-text a:focus { color: #fff; border-bottom: 1px dotted #fff; }
+
+.description-text .divider-1 { margin-top: 50px; }
+
+
+/***** Multi Step Form *****/	
+
+.msf-container { padding-bottom: 80px; text-align: center; }
+
+.msf-title h3 { padding-bottom: 10px; font-weight: 700; }
+.msf-title p { opacity: 0.8; font-weight: bold; }
+
+.msf-form h4 {
+	margin-top: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.msf-form h4 .step { color: #aaa; }
+
+.msf-form form fieldset { display: none; overflow: hidden; }
+
+.msf-form form input[type="text"] { width: 400px; margin-left: 5px; margin-right: 5px; font-weight: bold; }
+
+.msf-form form textarea.form-control { width: 700px; height: 160px; }
+
+.msf-form form select.form-control { width: 400px; margin-left: 5px; margin-right: 5px; font-weight: bold; }
+
+.msf-form form .form-group { margin-bottom: 15px; }
+
+.msf-form form button.btn { min-width: 110px; margin-top: 15px; margin-left: 5px; margin-right: 5px; }
+
+.msf-form form p { opacity: 0.8; }
+
+.msf-form form fieldset .checkbox-inline {
+	width: 40%;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}	
+  
+.msf-form form .radio-buttons-1,
+.msf-form form .radio-buttons-2,
+.msf-form form .checkboxes-1,
+.msf-form form .checkboxes-2,
+.msf-form form .checkboxes-3,
+.msf-form form .checkboxes-4,
+.msf-form form .checkboxes-5,
+.msf-form form .checkboxes-6,
+.msf-form form .checkboxes-7,
+.msf-form form .checkboxes-8,
+.msf-form form .checkboxes-9,
+.msf-form form .checkboxes-10,
+.msf-form form .checkboxes-11 {
+	display: block;
+	font-weight: bold;	
+  }
+.msf-form form fieldset label input[type='checkbox'] {
+	float: left;
+	/* margin-left:-18px; */
+	vertical-align: middle;
+}
+.msf-form form .selects-1,
+.msf-form form .selects-2 { display: inline-block; margin: 0 0 20px 0; font-weight: bold; }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Modal H3 */
+#modal-h3 {
+    color: black;
+}
+
+/* The Close Button */
+#modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#modal-close:hover,
+#modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#search {
+    width: 357px;
+	margin: 4px;
+	overflow: auto;
+}
+#search_text{
+    width: 297px;
+    padding: 15px 0 15px 20px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    height: 52px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: lavenderblush;
+    float: left;
+    box-sizing: border-box;
+	transition: all 0.15s;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+#search_text:focus {
+    background: magenta;
+}
+#search_button {
+    border: 0 none;
+    background: magenta center no-repeat;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 52px;
+    cursor: pointer;
+}
